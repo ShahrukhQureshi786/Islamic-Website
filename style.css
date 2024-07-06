@@ -1,0 +1,1602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    width: 100%;
+    max-height: auto;
+}
+
+/* Your existing CSS styles */
+.navbar-icon {
+    padding-left: 17px;
+    font-size: 50px;
+    color: yellow;
+}
+
+.navbar-container {
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    /* Ensures items are spaced evenly */
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.navbar-brand span {
+    font-size: 40px;
+}
+
+.navbar-brand p {
+    display: inline-block;
+    -webkit-transform: scale(1.5, 1);
+    font-size: 14px;
+}
+
+.navbar-brand:hover {
+    color: red;
+}
+
+nav {
+    flex-wrap: wrap;
+    background-color: rgb(0, 59, 30);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links li {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.navbar-touch button {
+    background-color: yellow;
+    border: 0.1px solid transparent;
+    border-radius: 20px;
+    display: flex;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+.navbar-touch button:hover {
+    color: red;
+}
+
+.navbar-hamburger {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 105px;
+        /* Adjust as needed */
+        right: 0;
+        /* Position on the right */
+        background-color: rgb(0, 59, 30);
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        z-index: 4;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        width: 100%;
+    }
+
+    .navbar-hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        /* Position on the right */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-links {
+        top: 90px;
+        /* Adjust as needed */
+    }
+}
+
+/* Base styles for large screens */
+.img-slide {
+    background-image: url('https://www.islamic-relief.org.uk/wp-content/uploads/2023/04/Hold-onto-Allahs-love-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    padding: 200px 20px 20px 20px;
+}
+
+.txxt {
+    padding: 30px 0px 0px 90px;
+}
+
+.border-div {
+    display: flex;
+    width: 450px;
+    height: auto;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 1px solid;
+    border-width: 5px;
+    border-radius: 50px 0px 50px 0px;
+    padding: 5px 20px;
+    border-color: yellow;
+    color: white;
+}
+
+.img-slide1 {
+    justify-content: left;
+    text-align: justify;
+    display: flex;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .img-slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50vh;
+        padding: 100px 10px 10px 10px;
+    }
+
+    .txxt {
+        padding: 50px 0px 0px 30px;
+    }
+
+    .border-div {
+        width: 350px;
+        font-size: 20px;
+        border-radius: 30px;
+        padding: 5px 10px;
+    }
+
+    .img-slide1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 499px) {
+    .img-slide {
+        padding: 50px 10px 10px 10px;
+    }
+
+    .txxt {
+        padding: 100px 0px 0px 40px;
+    }
+
+    .border-div {
+        width: 310px;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .img-slide1 {
+        font-size: 30px;
+    }
+}
+
+
+.container {
+    display: flex;
+    padding-top: 70px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    flex-wrap: wrap; /* To handle small screens properly */
+}
+
+.subdiv1 {
+    width: 350px;
+    height: auto;
+    padding: 20px 0px 40px 0px;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.subdiv1 i {
+    font-size: 60px;
+    margin-top: 40px;
+    color: rgb(0, 59, 30);
+}
+
+.subdiv1 div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(0, 59, 30);
+    font-size: 18px;
+}
+
+.subdiv1 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 40px;
+    text-align: justify;
+}
+
+.subdiv1 button {
+    padding: 3% 6%;
+    border-radius: 50px;
+    border: 1px solid;
+    border-width: 0.1px;
+    border-color: rgb(224, 191, 0);
+    background-color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    cursor: pointer;
+}
+
+.subdiv1 button:hover {
+    background-color: rgb(43, 255, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container{
+        padding: 20px;
+    }
+    .subdiv1 {
+        width: 300px;
+        padding: 15px 0px 30px 0px;
+    }
+
+    .subdiv1 i {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    .subdiv1 div {
+        font-size: 16px;
+    }
+
+    .subdiv1 p {
+        font-size: 14px;
+        padding: 30px;
+    }
+
+    .subdiv1 button {
+        padding: 2% 4%;
+    }
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        padding-top: 30px;
+        gap: 20px;
+    }
+
+    .subdiv1 {
+        width: 100%;
+        padding: 10px 0px 20px 0px;
+    }
+
+    .subdiv1 i {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .subdiv1 div {
+        font-size: 14px;
+    }
+
+    .subdiv1 p {
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    .subdiv1 button {
+        padding: 1% 2%;
+    }
+}
+
+
+
+.container2 {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    gap: 20px; /* Add some gap between items */
+}
+
+.subdiv2 {
+    padding: 20px; /* Add some padding for better spacing */
+}
+
+.subdiv2 span:first-child {
+    font-size: 50px;
+    -webkit-text-fill-color: rgb(0, 59, 30);
+}
+
+.subdiv2 span:last-child {
+    font-weight: bold;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .subdiv2 span:first-child {
+        font-size: 40px;
+    }
+
+    .subdiv2 span:last-child {
+        font-size: 16px;
+    }
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+    .container2 {
+        align-items: center;
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+
+    .subdiv2 span:first-child {
+        font-size: 30px;
+    }
+
+    .subdiv2 span:last-child {
+        font-size: 12px;
+    }
+}
+
+
+.container3 {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-evenly;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container3 img {
+    width: 600px;
+    max-width: 100%; /* Ensures image does not overflow on smaller screens */
+}
+
+.container3 div:last-child {
+    width: 600px;
+    max-width: 100%; /* Ensures text container does not overflow on smaller screens */
+}
+
+.container3 dl {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.container3 dt {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    -webkit-text-fill-color: rgb(0, 59, 30);
+}
+
+.container3 dd {
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.container3 button {
+    padding: 2% 5%;
+    border-radius: 50px;
+    border: 1px solid;
+    border-width: 0.1px;
+    border-color: rgb(224, 191, 0);
+    background-color: rgb(241, 241, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-fill-color: brown;
+    cursor: pointer;
+}
+
+.container3 button:hover {
+    background-color: rgb(43, 255, 0);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container3 img,
+    .container3 div:last-child {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container3 dl {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .container3 dt {
+        font-size: 35px;
+    }
+
+    .container3 dd {
+        font-size: 14px;
+    }
+
+    .container3 button {
+        margin-left: 15px;
+        padding: 2% 4%;
+    }
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+    .container3 img,
+    .container3 div:last-child {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .container3 dl {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .container3 dt {
+        font-size: 30px;
+    }
+
+    .container3 dd {
+        font-size: 12px;
+    }
+
+    .container3 button {
+        margin-left: 15px;
+        padding: 1% 3%;
+    }
+}
+
+
+.container4 {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 80px;
+    justify-content: space-around;
+    gap: 20px; /* Add some gap between items */
+}
+
+.container4 img {
+    width: 600px;
+    height: 350px;
+    max-width: 100%; /* Ensure image does not overflow on smaller screens */
+}
+
+.container4 div:first-child {
+    width: 600px;
+    margin-left: 30px;
+    max-width: 100%; /* Ensure text container does not overflow on smaller screens */
+}
+
+.container4 dt {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    -webkit-text-fill-color: rgb(0, 59, 30);
+}
+
+.container4 dd {
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.container4 button {
+    padding: 2% 5%;
+    border-radius: 50px;
+    border: 1px solid;
+    border-width: 0.1px;
+    border-color: rgb(224, 191, 0);
+    background-color: rgb(241, 241, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-fill-color: brown;
+    cursor: pointer;
+}
+
+.container4 button:hover {
+    background-color: rgb(43, 255, 0);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+.container4 div:last-child {
+    padding: 1%;
+    box-shadow: 0px 1px 1.5px 1px rgba(0, 0, 0, 0.15);
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container4 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container4 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container4 div:first-child {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container4 dt {
+        font-size: 35px;
+    }
+
+    .container4 dd {
+        font-size: 14px;
+    }
+
+    .container4 button {
+        padding: 2% 4%;
+    }
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+    .container4{
+        padding: 20px;
+    }
+    .container4 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container4 div:first-child {
+        width: 100%;
+    }
+
+    .container4 dt {
+        font-size: 30px;
+    }
+
+    .container4 dd {
+        font-size: 12px;
+    }
+
+    .container4 button {
+        padding: 1% 3%;
+    }
+}
+
+
+
+.container5 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    -webkit-text-fill-color: rgb(0, 59, 30);
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.container6 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 20px; /* Add some gap between items */
+}
+
+.img1,
+.img2,
+.img3 {
+    width: 350px;
+    border-radius: 30px 30px 0 0;
+    background-image: url(https://img.freepik.com/premium-photo/islamic-background-wall-paper_973183-908.jpg);
+    background-size: cover;
+    color: white;
+    padding: 40px;
+}
+
+.img2 {
+    background-position: bottom;
+}
+
+.img3 {
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container6 span {
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 37px;
+    text-shadow: 1px 5px 2px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container6 ul {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 5px 2px rgba(0, 0, 0, 0.45);
+}
+
+.img3 img {
+    width: 220px;
+    margin-top: 20px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container5 {
+        font-size: 35px;
+    }
+
+    .container6 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img1,
+    .img2,
+    .img3 {
+        width: 80%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .container6 span {
+        font-size: 30px;
+    }
+
+    .container6 ul {
+        font-size: 16px;
+    }
+
+    .img3 img {
+        width: 180px;
+    }
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+    .container5 {
+        font-size: 30px;
+    }
+
+    .img1,
+    .img2,
+    .img3 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .container6 span {
+        font-size: 25px;
+    }
+
+    .container6 ul {
+        font-size: 14px;
+    }
+
+    .img3 img {
+        width: 150px;
+    }
+}
+
+
+.container7 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Ensure items wrap to the next line on smaller screens */
+    gap: 20px; /* Add some gap between items */
+}
+
+.cont7 {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.15); /* Add shadow for better visibility */
+    border-radius: 20px; /* Add rounded corners */
+    background-color: #f9f9f9; /* Add background color */
+}
+
+.cont7 span {
+    -webkit-text-fill-color: rgb(0, 59, 30);
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cont7 p {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cont7 button {
+    padding: 2% 15%;
+    border-radius: 50px;
+    border: 0.1px solid rgb(224, 191, 0);
+    background-color: rgb(241, 241, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-fill-color: brown;
+    cursor: pointer;
+}
+
+.cont7 button:hover {
+    background-color: rgb(43, 255, 0);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container7 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont7 {
+        width: 80%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .cont7 span {
+        font-size: 24px;
+    }
+
+    .cont7 p {
+        font-size: 14px;
+    }
+
+    .cont7 button {
+        padding: 3% 10%;
+    }
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+    .container7 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont7 {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+
+    .cont7 span {
+        font-size: 20px;
+    }
+
+    .cont7 p {
+        font-size: 12px;
+    }
+
+    .cont7 button {
+        padding: 3% 8%;
+    }
+}
+
+
+.container8 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Ensure items wrap to the next line on smaller screens */
+    gap: 20px; /* Add some gap between items */
+}
+
+.container8 .img3 {
+    width: 350px;
+    border-radius: 30px 30px 0 0;
+    background-image: url(https://img.freepik.com/premium-photo/islamic-background-wall-paper_973183-908.jpg);
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container8 span {
+    font-size: 38px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+    color: white;
+    text-shadow: 1px 5px 2px rgba(0, 0, 0, 0.45);
+    margin-bottom: 20px;
+}
+
+.container8 .img3 img {
+    width: 220px;
+    margin-top: 20px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container8 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container8 .img3 {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .container8 span {
+        font-size: 32px;
+    }
+
+    .container8 .img3 img {
+        width: 180px;
+    }
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+    .container8 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container8 .img3 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .container8 span {
+        font-size: 28px;
+    }
+
+    .container8 .img3 img {
+        width: 150px;
+    }
+}
+
+
+.container9 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Ensure items wrap to the next line on smaller screens */
+    gap: 20px; /* Add some gap between items */
+}
+
+.cont7 {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.15); /* Add shadow for better visibility */
+    border-radius: 20px; /* Add rounded corners */
+    background-color: #f9f9f9; /* Add background color */
+    margin-bottom: 20px;
+}
+
+.cont7 span {
+    -webkit-text-fill-color: rgb(0, 59, 30);
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cont7 p {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cont7 button {
+    padding: 2% 15%;
+    border-radius: 50px;
+    border: 0.1px solid rgb(224, 191, 0);
+    background-color: rgb(241, 241, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-fill-color: brown;
+    cursor: pointer;
+}
+
+.cont7 button:hover {
+    background-color: rgb(43, 255, 0);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container9 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont7 {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .cont7 span {
+        font-size: 24px;
+    }
+
+    .cont7 p {
+        font-size: 14px;
+    }
+
+    .cont7 button {
+        padding: 3% 10%;
+    }
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+    .container9 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont7 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .cont7 span {
+        font-size: 20px;
+    }
+
+    .cont7 p {
+        font-size: 12px;
+    }
+
+    .cont7 button {
+        padding: 3% 8%;
+    }
+}
+
+
+.container10 {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/36/919/828/space-stars-nebula-wallpaper-preview.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.how {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: verdana;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.cont1 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cont1 div {
+    width: 300px;
+    font-family: verdana;
+    background-color: white;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.45);
+    margin: 10px;
+    padding: 20px;
+}
+
+.cont1 i {
+    border-radius: 50%;
+    padding: 25px;
+    font-size: 50px;
+    background-color: rgb(241, 241, 1);
+    color: rgb(0, 59, 30);
+    margin-top: -50px;
+    display: inline-block;
+}
+
+.cont1 div h2 {
+    font-size: 25px;
+    color: rgb(0, 59, 30);
+}
+
+.cont1 div p {
+    font-size: 16px;
+    text-align: justify;
+    padding: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .how {
+        font-size: 30px;
+    }
+
+    .cont1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont1 div {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .cont1 i {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .cont1 div h2 {
+        font-size: 22px;
+    }
+
+    .cont1 div p {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .how {
+        font-size: 24px;
+        padding: 10px 0px;
+    }
+
+    .cont1 div {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .cont1 i {
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .cont1 div h2 {
+        font-size: 20px;
+    }
+
+    .cont1 div p {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+
+.container11 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image-txt {
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.45);
+    background-image: url(https://img.freepik.com/premium-photo/islamic-background-wall-paper_973183-908.jpg);
+    width: 45%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: verdana;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-txt div {
+    width: 100%;
+    text-align: center;
+}
+
+.image-txt span:first-child {
+    color: white;
+    font-size: 30px;
+}
+
+.image-txt span:nth-child(3),
+.image-txt p:nth-child(5),
+.image-txt p:nth-child(6) {
+    color: white;
+    font-size: 20px;
+}
+
+.image-txt p:nth-child(5) {
+    font-size: 18px;
+}
+
+.cont2 {
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.45);
+    width: 55%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.cont2 h2 {
+    color: rgb(0, 59, 30);
+    font-size: 32px;
+    font-family: verdana;
+}
+
+.cont2 p {
+    font-size: 16px;
+    font-family: verdana;
+}
+
+.cont2 button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-width: 0.1px;
+    border-color: rgb(224, 191, 0);
+    background-color: rgb(241, 241, 1);
+    font-family: verdana;
+    color: brown;
+    cursor: pointer;
+}
+
+.cont2 button:hover {
+    background-color: rgb(43, 255, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .image-txt,
+    .cont2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-txt span:first-child,
+    .image-txt span:nth-child(3),
+    .image-txt p:nth-child(5),
+    .image-txt p:nth-child(6) {
+        font-size: 24px;
+    }
+
+    .cont2 h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-txt span:first-child,
+    .image-txt span:nth-child(3),
+    .image-txt p:nth-child(5),
+    .image-txt p:nth-child(6) {
+        font-size: 20px;
+    }
+
+    .cont2 h2 {
+        font-size: 24px;
+    }
+
+    .cont2 p {
+        font-size: 14px;
+    }
+
+    .cont2 button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-txt span:first-child,
+    .image-txt span:nth-child(3),
+    .image-txt p:nth-child(5),
+    .image-txt p:nth-child(6) {
+        font-size: 18px;
+    }
+
+    .cont2 h2 {
+        font-size: 20px;
+    }
+
+    .cont2 p {
+        font-size: 12px;
+    }
+
+    .cont2 button {
+        padding: 6px 12px;
+    }
+}
+
+
+.container12 {
+    background-image: url(https://wallpaperbat.com/img/224551-abstract-teal-color-free-wallpaper-hq.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: verdana;
+    text-align: center;
+    padding: 60px;
+    background-size: cover;
+}
+
+.container12 div {
+    padding: 20px;
+    max-width: 600px;
+    z-index: 2;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7); /* Added background color with opacity */
+}
+
+.container12 div::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(https://img.freepik.com/premium-photo/close-up-blank-white-rough-watercolor-paper-background-texture_273651-369.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.container12 img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.container12 p {
+    margin-bottom: 10px;
+}
+
+.container12 span {
+    display: block;
+    font-size: 14px;
+    color: rgb(224, 191, 0);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container12 {
+        padding: 40px;
+    }
+
+    .container12 div {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container12 {
+        padding: 20px;
+    }
+
+    .container12 div {
+        padding: 15px;
+    }
+
+    .container12 img {
+        width: 80px;
+    }
+}
+
+
+.container13 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.cont3 h2 {
+    color: rgb(0, 59, 30);
+    font-size: 32px;
+    font-family: verdana;
+    margin-bottom: 10px;
+}
+
+.cont3 span {
+    font-size: 16px;
+    font-family: verdana;
+}
+
+.cont4 {
+    margin-top: 20px;
+}
+
+.cont4 input {
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.cont4 button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 16px;
+    border: 1px solid rgb(224, 191, 0);
+    background-color: rgb(0, 59, 30);
+    color: white;
+    cursor: pointer;
+}
+
+.cont4 button:hover {
+    background-color: rgb(43, 255, 0);
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .container13 {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .cont4 {
+        margin-top: 0;
+    }
+
+    .cont4 input, .cont4 button {
+        width: auto;
+        max-width: none;
+    }
+}
+
+.container14 {
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2pvYjE0NTEtYmctMDQuanBn.jpg);
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cont5, .con1 {
+    width: 100%;
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.cont5 i {
+    color: yellow;
+    font-size: 30px;
+}
+
+.cont5 p {
+    color: white;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cont5 a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cont6 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cont6 div i {
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(0, 59, 30);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cont6 div i:hover {
+    background-color: yellow;
+    color: rgb(0, 59, 30);
+}
+
+.con1 h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.con1 hr {
+    background-color: white;
+    width: 50px;
+    border: none;
+    height: 2px;
+    margin: 10px auto;
+}
+
+.cont8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cont8 i {
+    color: white;
+    font-size: 18px;
+}
+
+.cont8 a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.footer-hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid white;
+    margin: 20px 0;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .con {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .cont5, .con1 {
+        max-width: 300px;
+    }
+
+    .cont5 {
+        flex: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .container14 {
+        padding: 20px;
+    }
+
+    .cont5, .con1 {
+        padding: 15px;
+    }
+
+    .cont5 i, .cont6 div i {
+        font-size: 24px;
+    }
+
+    .cont6 div i {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .con1 h2 {
+        font-size: 16px;
+    }
+
+    .cont8 i {
+        font-size: 16px;
+    }
+
+    .cont8 a {
+        font-size: 14px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+}

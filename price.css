@@ -1,0 +1,580 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    width: 100%;
+    max-height: auto;
+}
+
+/* Your existing CSS styles */
+.navbar-icon {
+    padding-left: 17px;
+    font-size: 50px;
+    color: yellow;
+}
+
+.navbar-container {
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    /* Ensures items are spaced evenly */
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.navbar-brand span {
+    font-size: 40px;
+}
+
+.navbar-brand p {
+    display: inline-block;
+    -webkit-transform: scale(1.5, 1);
+    font-size: 14px;
+}
+
+.navbar-brand:hover {
+    color: red;
+}
+
+nav {
+    flex-wrap: wrap;
+    background-color: rgb(0, 59, 30);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links li {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.navbar-touch button {
+    background-color: yellow;
+    border: 0.1px solid transparent;
+    border-radius: 20px;
+    display: flex;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+.navbar-touch button:hover {
+    color: red;
+}
+
+.navbar-hamburger {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 105px;
+        /* Adjust as needed */
+        right: 0;
+        /* Position on the right */
+        background-color: rgb(0, 59, 30);
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        z-index: 4;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        width: 100%;
+    }
+
+    .navbar-hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        /* Position on the right */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-links {
+        top: 90px;
+        /* Adjust as needed */
+    }
+}
+
+
+.container {
+    background-image: url(https://img.freepik.com/premium-vector/elegant-line-ornament-pattern-seamless-pattern-background-wallpaper-textile-printing-packaging-wrapper-etc_3811-4342.jpg?w=740);
+    width: 100%;
+    height: 80vh;
+    padding-top: 120px;
+}
+
+.container span:first-child {
+    padding-top: 180px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.85);
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container span:last-child {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 56px;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.85);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.container12 {
+    background-image: url(https://wallpaperbat.com/img/224551-abstract-teal-color-free-wallpaper-hq.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: verdana;
+    text-align: center;
+    padding: 60px;
+    background-size: cover;
+}
+
+.container12 div {
+    padding: 20px;
+    max-width: 600px;
+    z-index: 2;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7); /* Added background color with opacity */
+}
+
+.container12 div::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(https://img.freepik.com/premium-photo/close-up-blank-white-rough-watercolor-paper-background-texture_273651-369.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.container12 img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.container12 p {
+    margin-bottom: 10px;
+}
+
+.container12 span {
+    display: block;
+    font-size: 14px;
+    color: rgb(224, 191, 0);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container12 {
+        padding: 40px;
+    }
+
+    .container12 div {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container12 {
+        padding: 20px;
+    }
+
+    .container12 div {
+        padding: 15px;
+    }
+
+    .container12 img {
+        width: 80px;
+    }
+}
+
+.container1 {
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pricee {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    gap: 20px; /* Add gap between pricee classes */
+}
+
+.weekends {
+    width: 600px;
+    text-align: center;
+    box-shadow: 0px 1px 1.5px 1px rgba(0, 0, 0, 0.45);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.weekends h2 {
+    background-color: rgb(0, 59, 30);
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+.weekends span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.weekends span sup {
+    font-size: 20px;
+}
+
+.weekends font {
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.weekends hr {
+    width: 80%;
+}
+
+.weekends h2 font {
+    color: yellow;
+    font-family: "Trivial Bold";
+}
+
+.weekends button {
+    background-color: rgb(0, 59, 30);
+    border: 0.1px solid transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border-radius: 50px;
+    font-size: 17px;
+    padding: 10px 15px 10px 15px;
+}
+
+.weekends button:hover {
+    background-color: rgb(0, 75, 40);
+    border: 0.1px;
+    border-radius: 50px;
+    border: 0.1px solid transparent;
+    padding: 10px 15px 10px 15px;
+    font-size: 17px;
+    color: white;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Above 768px: Original styling remains */
+@media (min-width: 769px) {
+    .pricee {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Below 768px: Change to column layout and reduce size */
+@media (max-width: 768px) {
+    .pricee {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weekends {
+        width: 90%;
+        font-size: 0.9em; /* Reduce the size of all elements */
+    }
+
+    .weekends h2 {
+        font-size: 1.8em;
+    }
+
+    .weekends span {
+        font-size: 1.8em;
+    }
+
+    .weekends span sup {
+        font-size: 0.8em;
+    }
+
+    .weekends font {
+        padding-left: 20px;
+    }
+
+    .weekends button {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+}
+
+/* Below 500px: Further reduce size */
+@media (max-width: 500px) {
+    .weekends {
+        width: 100%;
+        font-size: 0.8em; /* Further reduce the size of all elements */
+    }
+
+    .weekends h2 {
+        font-size: 1.6em;
+    }
+
+    .weekends span {
+        font-size: 1.6em;
+    }
+
+    .weekends span sup {
+        font-size: 0.7em;
+    }
+
+    .weekends font {
+        padding-left: 15px;
+    }
+
+    .weekends button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
+
+
+
+.container14 {
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2pvYjE0NTEtYmctMDQuanBn.jpg);
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cont5, .con1 {
+    width: 100%;
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.cont5 i {
+    color: yellow;
+    font-size: 30px;
+}
+
+.cont5 p {
+    color: white;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cont5 a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cont6 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cont6 div i {
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(0, 59, 30);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cont6 div i:hover {
+    background-color: yellow;
+    color: rgb(0, 59, 30);
+}
+
+.con1 h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.con1 hr {
+    background-color: white;
+    width: 50px;
+    border: none;
+    height: 2px;
+    margin: 10px auto;
+}
+
+.cont8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cont8 i {
+    color: white;
+    font-size: 18px;
+}
+
+.cont8 a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.footer-hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid white;
+    margin: 20px 0;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .con {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .cont5, .con1 {
+        max-width: 300px;
+    }
+
+    .cont5 {
+        flex: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .container14 {
+        padding: 20px;
+    }
+
+    .cont5, .con1 {
+        padding: 15px;
+    }
+
+    .cont5 i, .cont6 div i {
+        font-size: 24px;
+    }
+
+    .cont6 div i {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .con1 h2 {
+        font-size: 16px;
+    }
+
+    .cont8 i {
+        font-size: 16px;
+    }
+
+    .cont8 a {
+        font-size: 14px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+}
